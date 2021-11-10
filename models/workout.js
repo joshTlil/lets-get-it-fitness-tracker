@@ -21,6 +21,7 @@ const workoutSchema = new Schema({
     },
     duration: {
         type: Number,
+        requires: true,
         // required: "Needs the time length"
     },
     weight: {
@@ -35,7 +36,11 @@ const workoutSchema = new Schema({
         type: Number,
         // required: "How many sets are you doing"
     }
- }]
+ }],
+ totalDuration: {
+    type: Number,
+    
+  }
 });
 
 const Workout = mongoose.model("Workout", workoutSchema);

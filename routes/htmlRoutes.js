@@ -1,5 +1,6 @@
+// Using path to connect both the html pages to connect to the index.html
 const path = require("path");
-
+//Using module export as a function and using app(express) for routing purposes
 module.exports = function(app) {
 
     
