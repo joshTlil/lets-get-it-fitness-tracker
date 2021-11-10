@@ -7,7 +7,7 @@ const workoutSchema = new Schema({
         type: Date,
         default: Date.now
       },
-      exercise: [
+      exercises: [
     {
     type: {
         type: String,
@@ -21,19 +21,19 @@ const workoutSchema = new Schema({
     },
     duration: {
         type: Number,
-        required: "Needs the time length"
+        // required: "Needs the time length"
     },
     weight: {
         type: Number,
-        required: "Needs the weight for what your repping"
+        // required: "Needs the weight for what your repping"
     },
     reps: {
         type: Number,
-        required: "How many reps are you doing"
+        // required: "How many reps are you doing"
     },
     sets: {
         type: Number,
-        required: "How many sets are you doing"
+        // required: "How many sets are you doing"
     }
  }]
 });
